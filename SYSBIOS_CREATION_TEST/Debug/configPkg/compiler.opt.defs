@@ -1,0 +1,1 @@
+-I"C:/ti/bios_6_83_00_18/packages" -I"C:/ti/ccs1271/xdctools_3_62_01_16_core/packages" -I"C:/Users/eidos/workspace_v12/test/Debug/configPkg/.." -IC:/ti/ccs1271/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include -Dxdc_target_types__="ti/targets/std.h" -Dxdc_target_name__=C28_float -Dxdc_cfg__xheader__="\"C:/Users/eidos/workspace_v12/test/Debug/configPkg/package/cfg/app_p28FP.h\""
