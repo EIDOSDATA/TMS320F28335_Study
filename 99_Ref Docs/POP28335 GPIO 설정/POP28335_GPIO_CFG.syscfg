@@ -1,0 +1,26 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "F2833x" --package "F2833x_176PGF" --part "F2833x_176PGF"
+ * @versions {"tool":"1.20.0+3587"}
+ */
+
+/**
+ * These are the peripherals and settings in this configuration
+ */
+const iGPIO1        = scripting.addPeripheral("GPIO");
+iGPIO1.$numPins     = 8;
+iGPIO1["0"].$assign = "GPIO60";
+iGPIO1["1"].$assign = "GPIO46";
+iGPIO1["2"].$assign = "GPIO2";
+iGPIO1["3"].$assign = "GPIO3";
+iGPIO1["4"].$assign = "GPIO4";
+iGPIO1["5"].$assign = "GPIO0";
+iGPIO1["6"].$assign = "GPIO6";
+iGPIO1["7"].$assign = "GPIO7";
+iGPIO1.$name        = "LED";
+const iGPIO2        = scripting.addPeripheral("GPIO");
+iGPIO2.$numPins     = 2;
+iGPIO2["0"].$assign = "GPIO54";
+iGPIO2["1"].$assign = "GPIO56";
+iGPIO2.$name        = "FND";

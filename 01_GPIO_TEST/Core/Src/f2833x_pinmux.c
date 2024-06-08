@@ -2,7 +2,7 @@
 //
 // f2833x_pinmux.c - Function to write the generated pin mux values to the
 //                   appropriate registers.
-// Created using TI Pinmux 1.20.0+3587 on 2024. 6. 7. at �삤�썑 4:31:58.
+// Created using TI Pinmux 1.20.0+3587 on 2024. 6. 8. at 오후 12:00:26.
 //
 //*****************************************************************************
 //
@@ -58,29 +58,30 @@
 // in the generated "f2833x_pinmux.h."
 //
 //*****************************************************************************
-void GPIO_setPinMuxConfig(void)
+void
+GPIO_setPinMuxConfig(void)
 {
     EALLOW;
 
     //
     // Clear the mux register fields that are about to be changed
     //
-    GpioCtrlRegs.GPAMUX1.all &= ~GPAMUX1_MASK;
-    GpioCtrlRegs.GPAMUX2.all &= ~GPAMUX2_MASK;
-    GpioCtrlRegs.GPBMUX1.all &= ~GPBMUX1_MASK;
-    GpioCtrlRegs.GPBMUX2.all &= ~GPBMUX2_MASK;
-    GpioCtrlRegs.GPCMUX1.all &= ~GPCMUX1_MASK;
-    GpioCtrlRegs.GPCMUX2.all &= ~GPCMUX2_MASK;
+    GpioCtrlRegs.GPAMUX1.all	&= ~GPAMUX1_MASK;
+    GpioCtrlRegs.GPAMUX2.all	&= ~GPAMUX2_MASK;
+    GpioCtrlRegs.GPBMUX1.all	&= ~GPBMUX1_MASK;
+    GpioCtrlRegs.GPBMUX2.all	&= ~GPBMUX2_MASK;
+    GpioCtrlRegs.GPCMUX1.all	&= ~GPCMUX1_MASK;
+    GpioCtrlRegs.GPCMUX2.all	&= ~GPCMUX2_MASK;
 
     //
     // Write pin muxing to mux registers
     //
-    GpioCtrlRegs.GPAMUX1.all |= GPAMUX1_VALUE;
-    GpioCtrlRegs.GPAMUX2.all |= GPAMUX2_VALUE;
-    GpioCtrlRegs.GPBMUX1.all |= GPBMUX1_VALUE;
-    GpioCtrlRegs.GPBMUX2.all |= GPBMUX2_VALUE;
-    GpioCtrlRegs.GPCMUX1.all |= GPCMUX1_VALUE;
-    GpioCtrlRegs.GPCMUX2.all |= GPCMUX2_VALUE;
+    GpioCtrlRegs.GPAMUX1.all	|=  GPAMUX1_VALUE;
+    GpioCtrlRegs.GPAMUX2.all	|=  GPAMUX2_VALUE;
+    GpioCtrlRegs.GPBMUX1.all	|=  GPBMUX1_VALUE;
+    GpioCtrlRegs.GPBMUX2.all	|=  GPBMUX2_VALUE;
+    GpioCtrlRegs.GPCMUX1.all	|=  GPCMUX1_VALUE;
+    GpioCtrlRegs.GPCMUX2.all	|=  GPCMUX2_VALUE;
 
     //EDIS;
 }

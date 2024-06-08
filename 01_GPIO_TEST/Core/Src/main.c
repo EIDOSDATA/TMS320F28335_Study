@@ -13,13 +13,13 @@ int main(void)
 
     GPIO_setPinMuxConfig();
 
-    /* GPIO 60 ~ 61 */
+    /* LED 0 ~ 1 :: GPIO 60 ~ 61 */
     GpioCtrlRegs.GPBDIR.bit.GPIO60 = 1;
     GpioCtrlRegs.GPBPUD.bit.GPIO60 = 0;
     GpioCtrlRegs.GPBDIR.bit.GPIO61 = 1;
     GpioCtrlRegs.GPBPUD.bit.GPIO61 = 0;
 
-    /* GPIO 02 ~ 07 */
+    /* LED 2 ~ 7 :: GPIO 02 ~ 07 */
     GpioCtrlRegs.GPADIR.bit.GPIO2 = 1;
     GpioCtrlRegs.GPAPUD.bit.GPIO2 = 0;
     GpioCtrlRegs.GPADIR.bit.GPIO3 = 1;
@@ -33,10 +33,19 @@ int main(void)
     GpioCtrlRegs.GPADIR.bit.GPIO7 = 1;
     GpioCtrlRegs.GPAPUD.bit.GPIO7 = 0;
 
+    /* FND PIN :: GPIO 54, 56 */
+    GpioCtrlRegs.GPBDIR.bit.GPIO54 = 1;
+    GpioCtrlRegs.GPBPUD.bit.GPIO54 = 0;
+
+    GpioCtrlRegs.GPBDIR.bit.GPIO56 = 1;
+    GpioCtrlRegs.GPBPUD.bit.GPIO56 = 0;
+
     EDIS;
     /* GPIO CFG MEMORY PROTECTION */
     while (1)
     {
+
+        DELAY_US(1000000);
         GpioDataRegs.GPBTOGGLE.bit.GPIO60 = 1;
         GpioDataRegs.GPBTOGGLE.bit.GPIO61 = 1;
         GpioDataRegs.GPATOGGLE.bit.GPIO2 = 1;
@@ -45,6 +54,9 @@ int main(void)
         GpioDataRegs.GPATOGGLE.bit.GPIO5 = 1;
         GpioDataRegs.GPATOGGLE.bit.GPIO6 = 1;
         GpioDataRegs.GPATOGGLE.bit.GPIO7 = 1;
+
+        GpioDataRegs.GPBSET.bit.GPIO54 = 1;
+        GpioDataRegs.GPBTOGGLE.bit.GPIO56 = 1;
         DELAY_US(1000000);
     }
     return 0;
