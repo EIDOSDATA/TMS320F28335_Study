@@ -34,7 +34,7 @@
 #include "tmwscl/dnp/dnpchnl.h"
 
 /*Target mem config*/
-#include "stack_mem.h"
+#include "tmwscl/tmwtarg/stack_mem.h"
 
 typedef struct {
   TMWMEM_HEADER        header;

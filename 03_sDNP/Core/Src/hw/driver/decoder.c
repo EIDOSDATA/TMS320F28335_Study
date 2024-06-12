@@ -6,7 +6,7 @@
  */
 
 
-#include "src/common/hw/include/decoder.h"
+#include "decoder.h"
 
 
 /*

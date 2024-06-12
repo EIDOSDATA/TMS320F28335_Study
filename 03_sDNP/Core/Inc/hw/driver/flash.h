@@ -9,10 +9,10 @@
 #define BSP_ZONE7_MEMORY_FLASH_H_
 
 #include "hw_def.h"
-#include "src/common/hw/include/crc.h"
-#include "src/common/hw/include/decoder.h"
-#include "src/common/hw/include/flash.h"
-#include "src/common/hw/include/fram.h"
+#include "crc.h"
+#include "decoder.h"
+#include "flash.h"
+#include "fram.h"
 
 #define FLASH_SECTOR_SIZE 0x800
 

@@ -11,7 +11,6 @@
 #include <string.h>
 #include "types.h"
 
-
 uint16 Compute_DNP_CRC(uint16 *pBuf, uint16 length);
 uint16 CRC_Update(uint16 *pBuf, uint16 length, uint16 PrevCrc);
 

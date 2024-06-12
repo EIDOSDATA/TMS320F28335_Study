@@ -13,12 +13,12 @@ extern uint16 RamfuncsRunStart;
  *  ======== main ========
  */
 Int main()
-{ 
+{
     hwInit();
     apInit();
     apMain();
 
-    return(0);
+    return (0);
 }
 
 void Startup(void)

@@ -26,11 +26,11 @@
 #include "tmwscl/utils/tmwpltmr.h"
 
 /*physical interface*/
-#include "targ232.h"
-#include "targtcp.h"
+#include "tmwscl/tmwtarg/targ232.h"
+#include "tmwscl/tmwtarg/targtcp.h"
 
 /*database interface*/
-#include "targdb.h"
+#include "tmwscl/tmwdb/targdb.h"
 #endif
 
 

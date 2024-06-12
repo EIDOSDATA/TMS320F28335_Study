@@ -12,8 +12,8 @@
  */
 
 #include "def.h"
-#include "src/common/hw/include/decoder.h"
-#include "src/common/hw/include/flash.h"
+#include "decoder.h"
+#include "flash.h"
 
 
 #define SECTOR_ERASE_SHIFT(Sector)      (Sector<<11)

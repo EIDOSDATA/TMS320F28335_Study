@@ -51,7 +51,7 @@
 #endif 
 
 /*Database Interface*/
-#include "targdb.h"
+#include "tmwscl/tmwdb/targdb.h"
 
 /* function: sdnpdata_init */
 void * TMWDEFS_GLOBAL sdnpdata_init(

@@ -52,7 +52,7 @@
 #endif
 
 /*Target mem config*/
-#include "stack_mem.h"
+#include "tmwscl/tmwtarg/stack_mem.h"
 
 /* Memory allocation structures */
 
