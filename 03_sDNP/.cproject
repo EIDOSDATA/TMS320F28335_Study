@@ -114,7 +114,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Driver/bsp/28335_RAM_lnk.cmd|Driver/bsp/src|Driver/DSP2833x/common/source/DSP2833x_Spi.c|Driver/DSP2833x/common/source/DSP2833x_SWPrioritizedPieVect.c|Driver/DSP2833x/common/source/DSP2833x_SWPrioritizedDefaultIsr.c|Driver/DSP2833x/common/source/DSP2833x_PieVect.c|Driver/DSP2833x/common/source/DSP2833x_PieCtrl.c|Driver/DSP2833x/common/source/DSP2833x_Mcbsp.c|Driver/DSP2833x/common/source/DSP2833x_I2C.c|Driver/DSP2833x/common/source/DSP2833x_EQep.c|Driver/DSP2833x/common/source/DSP2833x_ECan.c|Driver/DSP2833x/common/source/DSP2833x_DefaultIsr.c|Driver/DSP2833x/common/source/DSP2833x_CSMPasswords.asm|tmwtarg" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Driver/tmwscl/tmwtarg/winiotarg|Driver/tmwscl/tmwtarg/LinIoTarg|Driver/bsp/28335_RAM_lnk.cmd|Driver/bsp/src|Driver/DSP2833x/common/source/DSP2833x_Spi.c|Driver/DSP2833x/common/source/DSP2833x_SWPrioritizedPieVect.c|Driver/DSP2833x/common/source/DSP2833x_SWPrioritizedDefaultIsr.c|Driver/DSP2833x/common/source/DSP2833x_PieVect.c|Driver/DSP2833x/common/source/DSP2833x_PieCtrl.c|Driver/DSP2833x/common/source/DSP2833x_Mcbsp.c|Driver/DSP2833x/common/source/DSP2833x_I2C.c|Driver/DSP2833x/common/source/DSP2833x_EQep.c|Driver/DSP2833x/common/source/DSP2833x_ECan.c|Driver/DSP2833x/common/source/DSP2833x_DefaultIsr.c|Driver/DSP2833x/common/source/DSP2833x_CSMPasswords.asm" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
